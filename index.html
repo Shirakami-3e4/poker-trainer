@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ディーラー練習</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="home">
+<h1>ディーラー役判定練習</h1>
+<button onclick="startMode(2)">ヘッズアップ</button>
+<button onclick="startMode(3)">3人</button>
+<button onclick="startMode(4)">4人</button>
+</div>
+
+<div id="game" style="display:none;">
+<div id="topBar">
+  <button id="backBtn" onclick="backHome()">戻る</button>
+  <button id="hardBtn" onclick="toggleHard()">ハード</button>
+</div>
+
+<h2 id="modeTitle"></h2>
+
+<div id="board" class="row"></div>
+<div id="players" class="players"></div>
+<div id="buttons"></div>
+
+<div id="result"></div>
+
+<button id="nextBtn" onclick="startGame()" style="display:none;">次の問題</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

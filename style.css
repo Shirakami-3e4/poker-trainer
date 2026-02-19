@@ -1,0 +1,29 @@
+body{background:#0b3d2e;color:white;text-align:center;font-family:sans-serif;}
+.row{display:flex;justify-content:center;margin:10px;}
+.card{width:70px;margin:5px;border-radius:6px;transition:0.2s;}
+.highlight{box-shadow:0 0 15px 5px gold;transform:scale(1.1);}
+.players{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.player{background:rgba(255,255,255,0.1);padding:10px;border-radius:10px;cursor:pointer;transition:0.2s;}
+.player.selected{border:2px solid gold;box-shadow:0 0 10px gold;transform:scale(1.03);}
+.player input{display:none;}
+
+button{
+  padding:10px 16px;margin:5px;font-size:16px;
+  border:none;border-radius:12px;color:white;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(10px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  transition:all 0.2s ease;
+}
+button:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 8px 18px rgba(0,0,0,0.4);}
+button:active{transform:translateY(2px) scale(0.98);}
+
+#hardBtn.active{background:rgba(255,0,0,0.7);box-shadow:0 8px 20px rgba(255,0,0,0.6);transform:translateY(-4px) scale(1.05);}
+#buttons button{background:rgba(255,200,0,0.3);}
+#nextBtn{background:rgba(0,255,150,0.25);}
+
+#topBar{position:fixed;top:10px;left:0;width:100%;pointer-events:none;}
+#backBtn{position:absolute;left:10px;pointer-events:auto;}
+#hardBtn{position:absolute;right:10px;pointer-events:auto;font-size:12px;padding:5px 10px;}
+
+#game{margin-top:50px;}
